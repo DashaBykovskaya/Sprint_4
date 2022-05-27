@@ -17,6 +17,7 @@ public class TestForAccount {
     @Parameterized.Parameters(name = "Тестовые данные: {0},{1}")
     public static Object[][] getFoodTestAnimal() {
         return new Object[][]{
+                {null, false}, //проверка null
                 {"", false}, //пустая строка
                 {"Tes", false}, //3 символа без пробела
                 {"Te s", true}, //3 символа с 1 пробелом
